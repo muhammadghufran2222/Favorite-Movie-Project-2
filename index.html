@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Favorite Movies</title>
+    <link rel="stylesheet" href="assets/styles/app.css" />
+    <script src="assets/scripts/app.js" defer></script>
+  </head>
+  <body>
+    <div id="backdrop"></div>
+    <div class="modal card" id="add-modal">
+      <div class="modal__content">
+        <label for="title">Movie Title</label>
+        <input type="text" name="title" id="title" />
+        <label for="image-url">Image URL</label>
+        <input type="text" name="image-url" id="image-url" />
+        <label for="rating">Your Rating</label>
+        <input
+          type="number"
+          step="1"
+          max="5"
+          min="1"
+          name="rating"
+          id="rating"
+        />
+      </div>
+      <div class="modal__actions">
+        <button class="btn btn--passive">Cancel</button>
+        <button class="btn btn--success">Add</button>
+      </div>
+    </div>
+    <div class="modal card" id="delete-modal">
+      <h2 class="modal__title">Are you sure?</h2>
+      <p class="modal__content">
+        Are you sure you want to delete this item? This action can't be made
+        undone!
+      </p>
+      <div class="modal__actions">
+        <button class="btn btn--passive">No (Cancel)</button>
+        <button class="btn btn--danger">Yes</button>
+      </div>
+    </div>
+
+    <header>
+      <h1>Favorite Movies</h1>
+      <button>ADD MOVIE</button>
+    </header>
+
+    <main>
+      <section id="entry-text" class="card">
+        <p>Your personal movie database!</p>
+      </section>
+      <ul id="movie-list"></ul>
+    </main>
+
+    <!-- <div class="modal-wrapper" id="modal">
+      <form id="modal-form" class="w-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required class="w-input" />
+        <label for="image-link">Image Link:</label>
+        <input type="text" id="image-link" required class="w-input" />
+        <label for="rating">Rating:</label>
+        <input
+          type="number"
+          id="rating"
+          min="1"
+          max="5"
+          required
+          class="w-input"
+        />
+        <button id="submit" type="button" class="w-button">Submit</button>
+      </form>
+    </div>
+
+    <div id="submitted-data">
+      <h3>Submitted Data:</h3>
+      <p id="display-name"></p>
+      <img id="display-image" src="" alt="Image Preview" />
+      <p id="display-rating"></p>
+    </div>
+  </body>
+</html> -->
+  </body>
+</html>
